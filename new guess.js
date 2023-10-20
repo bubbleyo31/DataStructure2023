@@ -23,11 +23,11 @@ for (var i = 0; i < 20; i++) //20次機會
         }
     } while (true);
 
-    // 初始化此次猜测的计数器
+    // 初始化
     var tempCounterA = 0;
     var tempCounterB = 0;
 
-    // 检查猜测中的A和B
+    // 檢查
     for (var j = 0; j < 4; j++) {
         if (parseInt(guess[j]) === answer[j]) {
             tempCounterA++;
@@ -36,9 +36,9 @@ for (var i = 0; i < 20; i++) //20次機會
         }
     }
 
-    console.log(tempCounterA + "A" + tempCounterB + "B");
+    console.log("Your guess:" ,tempCounterA + "A" + tempCounterB + "B");
 
-    // 更新总计数器
+    // 更新
     counterA = tempCounterA;
     counterB = tempCounterB;
 

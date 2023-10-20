@@ -44,15 +44,25 @@ for(var i=0; i<7;i++){
             continue;
         }
     } while (true);
-
+}
     //judge ?A?B
     //  answer[0],answer[1], answer[2], answer[3];
     //  guess[0], guess[1], guess[2], guess[3];
     //sohw ?A?B
-    
+    for (let guess_idx = 0; guess_idx < 4; guess_idx++) {
+        if(guess[guess_idx]==answer[ans_idx]){
+            if(guess_idx==ans_idx)
+        {counterA++;
+        }
+        else{counterB++;
+        }
+        const element = array[index];
+        
+    }
      if(counterA==4){
          console.log("You win the game!");
          break;
+    
      }
 }
 if(counterA<4){
